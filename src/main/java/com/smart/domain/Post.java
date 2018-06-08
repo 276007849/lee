@@ -27,7 +27,7 @@ import com.sun.jna.platform.win32.Netapi32Util.User;
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="post_type",discriminatorType=DiscriminatorType.STRING)
 @DiscriminatorValue("1")
-public class Post {
+public class Post extends BaseDomain {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="post_id")
